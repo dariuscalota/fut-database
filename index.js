@@ -9,7 +9,7 @@ var players = [];
 function getPlayersPages(PAGE) {
     console.log('Page ',PAGE,' of ',TOTAL_PAGES);
     console.log('Records: ', players.length);
-    if(PAGE <= 3){
+    if(PAGE <= TOTAL_PAGES){
         var options = {
             uri: 'https://www.easports.com/fifa/ultimate-team/api/fut/item?jsonParamObject=%7B%22page%22:'+PAGE+',%22position%22:%22LF,CF,RF,ST,LW,LM,CAM,CDM,CM,RM,RW,LWB,LB,CB,RB,RWB%22%7D',
             json: true
@@ -38,7 +38,7 @@ function getPlayersPages(PAGE) {
 function getGKPages(PAGE) {
     console.log('Page ',PAGE,' of ',TOTAL_PAGES);
     console.log('Records: ', players.length);
-    if(PAGE <= 3){
+    if(PAGE <= TOTAL_PAGES){
         var options = {
             uri: 'https://www.easports.com/fifa/ultimate-team/api/fut/item?jsonParamObject=%7B%22page%22:'+PAGE+',%22position%22:%22GK%22%7D',
             json: true
