@@ -1,0 +1,31 @@
+{
+  "name": "fut-database",
+  "version": "1.0.0",
+  "description": "EA Sports FIFA FUT databse scraper for all players",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dariuscalota/fut-database.git"
+  },
+  "keywords": [
+    "fut",
+    "databse",
+    "fifa",
+    "players"
+  ],
+  "author": "Darius Calota",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dariuscalota/fut-database/issues"
+  },
+  "homepage": "https://github.com/dariuscalota/fut-database#readme",
+  "dependencies": {
+    "jsonfile": "^4.0.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}
